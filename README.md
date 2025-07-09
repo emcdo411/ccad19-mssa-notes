@@ -12,7 +12,7 @@ C# is a **compiled language**, which means the code you write (called **source c
 
 ---
 
-### 🐳 Why Use Docker with .NET?
+### 🛣️ Why Use Docker with .NET?
 
 Docker lets you run your C#/.NET app in a **lightweight container** that works the same everywhere — on your dev machine, in Azure, or in production.
 
@@ -21,7 +21,7 @@ Benefits:
 * 🚀 **Portability**: "Build once, run anywhere"
 * 🔐 **Isolation**: Keeps dependencies clean
 * 🧪 **Testability**: Run multiple versions without conflict
-* 📆 **CI/CD Ready**: Plug into GitHub Actions, Azure DevOps, etc.
+* 🗖 **CI/CD Ready**: Plug into GitHub Actions, Azure DevOps, etc.
 
 ---
 
@@ -59,7 +59,7 @@ GitHub supports native **environments** for each stage of deployment:
 * `qa` / `staging`
 * `production`
 
-#### 🧩 Features:
+#### 🧩️ Features:
 
 * Environment-specific **secrets**
 * **Required reviewers** and **wait timers**
@@ -179,7 +179,7 @@ git push origin feature/login
 
 ---
 
-## 🔁 What Is a **Merge**?
+## 🖁 What Is a **Merge**?
 
 ### 📌 Definition:
 
@@ -225,15 +225,23 @@ git push origin main
 | **Branch** | Line of development | Add feature, fix bug       | Inside one repo | `git checkout -b branchname` |
 | **Merge**  | Combine branches    | Finalize feature, release  | Any Git repo    | `git merge branchname`       |
 
+---
 
 ## 🧭 Visual Git Workflow: Fork → Branch → PR → Merge
 
 ```mermaid
-
 flowchart LR
-    A[Original Repo (main)] -->|Fork| B[Your Forked Repo (main)]
+    A[Original Repo - main] -->|Fork| B[Your Forked Repo - main]
     B -->|Create Branch| C[feature/login]
     C -->|Make Commits| D[Commits]
     D -->|Push to Fork| E[Pull Request]
-    E -->|Merge| F[Original Repo (main)]
+    E -->|Merge| F[Original Repo - main]
+```
+
+---
+
+## 📘 Summary
+
+You're not just learning C# — you're learning how **modern cloud-native development** works with compiled languages, containers, CI/CD pipelines, GitHub environments, and Git workflows.
+
 
