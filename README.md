@@ -225,11 +225,11 @@ git push origin main
 | **Branch** | Line of development | Add feature, fix bug       | Inside one repo | `git checkout -b branchname` |
 | **Merge**  | Combine branches    | Finalize feature, release  | Any Git repo    | `git merge branchname`       |
 
----
 
 ## 🧭 Visual Git Workflow: Fork → Branch → PR → Merge
 
 ```mermaid
+
 flowchart LR
     A[Original Repo (main)] -->|Fork| B[Your Forked Repo (main)]
     B -->|Create Branch| C[feature/login]
