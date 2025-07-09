@@ -125,8 +125,3 @@ graph TD
   C --> D[Make Commits]
   D --> E[Pull Request]
   E --> F[Merge into main]
-```
-
----
-
-Let me know if you want this explained **as a visual Git diagram** or added to your **README as a beginner Git guide** for your MSSA cohort.
