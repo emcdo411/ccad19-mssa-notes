@@ -119,9 +119,9 @@ git push origin main
 ## 🧭 Visual Workflow (Optional Mermaid)
 
 ```mermaid
-graph TD
-  A[Original Repo (main)] -->|Fork| B[Your Forked Repo]
-  B --> C[feature/login Branch]
-  C --> D[Make Commits]
-  D --> E[Pull Request]
-  E --> F[Merge into main]
+flowchart LR
+    A[Original Repo (main)] -->|Fork| B[Your Forked Repo (main)]
+    B -->|Create Branch| C[feature/login]
+    C -->|Make Commits| D[Commits]
+    D -->|Push to Fork| E[Pull Request]
+    E -->|Merge| F[Original Repo (main)]
