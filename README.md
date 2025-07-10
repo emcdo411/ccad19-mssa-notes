@@ -244,4 +244,61 @@ flowchart LR
 
 You're not just learning C# — you're learning how **modern cloud-native development** works with compiled languages, containers, CI/CD pipelines, GitHub environments, and Git workflows.
 
+🧠 Git & GitHub Beginner Automation Script
+
+This bash script demonstrates the most common Git commands in a beginner-friendly way, complete with inline notes.
+
+#!/bin/bash
+
+# ✅ STEP 1: Initialize a new local repo and push to GitHub
+mkdir myproject && cd myproject
+echo "# My MSSA Demo Project" > README.md
+
+git init                            # Start tracking this directory with Git
+git add README.md                   # Stage the README file
+git commit -m "Initial commit"      # Save a snapshot of the project
+git branch -M main                  # Rename default branch to 'main'
+git remote add origin https://github.com/YOUR-USERNAME/mssa3demo.git
+                                    # Link to your GitHub repo
+git push -u origin main             # Push local repo to GitHub
+
+# ✅ STEP 2: Simulate collaboration from two users
+mkdir C:/GitHub.bob                 # Create a local directory for the clone
+cd C:/GitHub.bob
+git clone https://github.com/YOUR-USERNAME/mssa3demo.git
+cd mssa3demo
+code .                              # Open in VS Code
+
+# ✅ STEP 3: Alice creates a conflicting change
+git checkout -b alice-conflict
+echo "This is Alice's version of the file." > shared.txt
+git add shared.txt
+git commit -m "Alice adds her version of shared.txt"
+git push -u origin alice-conflict
+
+# ✅ STEP 4: Bob creates his own conflicting change
+git checkout -b bob-conflict
+echo "This is Bob's version of the file." > shared.txt
+git add shared.txt
+git commit -m "Bob adds his version of shared.txt"
+git push -u origin bob-conflict
+
+# ✅ STEP 5: Alice merges main (expect conflict)
+git fetch origin
+git checkout alice-conflict
+git merge origin/main               # Will trigger a conflict
+
+# Resolve the conflict manually in shared.txt
+
+# ✅ STEP 6: Finalize conflict resolution
+git add shared.txt
+git commit -m "Resolve merge conflict in shared.txt"
+git push
+
+💡 This script helps visualize branching, conflict, and collaboration workflows for new developers. Use it in demos, classes, or as part of your onboarding guide.
+
+📘 Summary
+
+You're not just learning C# — you're learning how modern cloud-native development works with compiled languages, containers, CI/CD pipelines, GitHub environments, and Git workflows.
+
 
