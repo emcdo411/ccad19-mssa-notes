@@ -828,25 +828,25 @@ Here’s a clean, GitHub-friendly **Mermaid diagram** that visually compares **A
 
 ---
 
-## 🧭 ASP.NET Core vs .NET MAUI (Workflow Diagram)
+## 🧭 ASP.NET Core vs .NET MAUI (Mermaid Diagram)
 
 ```mermaid
 flowchart TD
-    A[.NET Platform] --> B1[ASP.NET Core]
-    A --> B2[.NET MAUI]
+    A[".NET Platform"] --> B1["ASP.NET Core"]
+    A --> B2[".NET MAUI"]
 
-    B1 --> C1[Web Apps (Razor Pages, MVC)]
-    B1 --> C2[Web APIs]
-    B1 --> C3[Blazor (Server/WebAssembly)]
+    B1 --> C1["Web Apps: Razor Pages, MVC"]
+    B1 --> C2["Web APIs"]
+    B1 --> C3["Blazor: Server / WebAssembly"]
 
-    B2 --> D1[Mobile Apps (iOS/Android)]
-    B2 --> D2[Desktop Apps (Windows/macOS)]
+    B2 --> D1["Mobile Apps: iOS / Android"]
+    B2 --> D2["Desktop Apps: Windows / macOS"]
 
-    C1 --> E1[Runs in Browser 🌐]
+    C1 --> E1["Runs in Browser 🌐"]
     C2 --> E1
     C3 --> E1
 
-    D1 --> E2[Runs on Device 📱]
+    D1 --> E2["Runs on Device 📱"]
     D2 --> E2
 
     style B1 fill:#3b82f6,stroke:#000,color:#fff
