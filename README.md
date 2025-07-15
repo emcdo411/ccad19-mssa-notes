@@ -828,14 +828,12 @@ Here’s a clean, GitHub-friendly **Mermaid diagram** that visually compares **A
 
 ---
 
-### 🧭 Mermaid Diagram: ASP.NET Core vs .NET MAUI
-
-<pre>
+## 🧭 ASP.NET Core vs .NET MAUI (Workflow Diagram)
 
 ```mermaid
 flowchart TD
     A[.NET Platform] --> B1[ASP.NET Core]
-    A[.NET Platform] --> B2[.NET MAUI]
+    A --> B2[.NET MAUI]
 
     B1 --> C1[Web Apps (Razor Pages, MVC)]
     B1 --> C2[Web APIs]
@@ -855,19 +853,3 @@ flowchart TD
     style B2 fill:#10b981,stroke:#000,color:#fff
     style E1 fill:#fbbf24,stroke:#000,color:#000
     style E2 fill:#f87171,stroke:#000,color:#000
-```
-
-</pre>
-
----
-
-
-
-
-
-
-
-
-
-
-
